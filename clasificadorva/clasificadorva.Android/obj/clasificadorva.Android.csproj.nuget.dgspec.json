@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\Cristhian\\source\\repos\\clasificadorva\\clasificadorva\\clasificadorva.Android\\clasificadorva.Android.csproj": {}
+    "C:\\Users\\Cristhian\\source\\repos\\CustomVision\\clasificadorva\\clasificadorva.Android\\clasificadorva.Android.csproj": {}
   },
   "projects": {
-    "C:\\Users\\Cristhian\\source\\repos\\clasificadorva\\clasificadorva\\clasificadorva.Android\\clasificadorva.Android.csproj": {
+    "C:\\Users\\Cristhian\\source\\repos\\CustomVision\\clasificadorva\\clasificadorva.Android\\clasificadorva.Android.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Cristhian\\source\\repos\\clasificadorva\\clasificadorva\\clasificadorva.Android\\clasificadorva.Android.csproj",
+        "projectUniqueName": "C:\\Users\\Cristhian\\source\\repos\\CustomVision\\clasificadorva\\clasificadorva.Android\\clasificadorva.Android.csproj",
         "projectName": "clasificadorva.Android",
-        "projectPath": "C:\\Users\\Cristhian\\source\\repos\\clasificadorva\\clasificadorva\\clasificadorva.Android\\clasificadorva.Android.csproj",
+        "projectPath": "C:\\Users\\Cristhian\\source\\repos\\CustomVision\\clasificadorva\\clasificadorva.Android\\clasificadorva.Android.csproj",
         "packagesPath": "C:\\Users\\Cristhian\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Cristhian\\source\\repos\\clasificadorva\\clasificadorva\\clasificadorva.Android\\obj\\",
+        "outputPath": "C:\\Users\\Cristhian\\source\\repos\\CustomVision\\clasificadorva\\clasificadorva.Android\\obj\\",
         "projectStyle": "PackageReference",
         "skipContentFileWrite": true,
         "fallbackFolders": [
@@ -32,8 +32,8 @@
         "frameworks": {
           "monoandroid90": {
             "projectReferences": {
-              "C:\\Users\\Cristhian\\source\\repos\\clasificadorva\\clasificadorva\\clasificadorva\\clasificadorva.csproj": {
-                "projectPath": "C:\\Users\\Cristhian\\source\\repos\\clasificadorva\\clasificadorva\\clasificadorva\\clasificadorva.csproj"
+              "C:\\Users\\Cristhian\\source\\repos\\CustomVision\\clasificadorva\\clasificadorva\\clasificadorva.csproj": {
+                "projectPath": "C:\\Users\\Cristhian\\source\\repos\\CustomVision\\clasificadorva\\clasificadorva\\clasificadorva.csproj"
               }
             }
           }
@@ -54,14 +54,14 @@
         }
       }
     },
-    "C:\\Users\\Cristhian\\source\\repos\\clasificadorva\\clasificadorva\\clasificadorva\\clasificadorva.csproj": {
+    "C:\\Users\\Cristhian\\source\\repos\\CustomVision\\clasificadorva\\clasificadorva\\clasificadorva.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Cristhian\\source\\repos\\clasificadorva\\clasificadorva\\clasificadorva\\clasificadorva.csproj",
+        "projectUniqueName": "C:\\Users\\Cristhian\\source\\repos\\CustomVision\\clasificadorva\\clasificadorva\\clasificadorva.csproj",
         "projectName": "clasificadorva",
-        "projectPath": "C:\\Users\\Cristhian\\source\\repos\\clasificadorva\\clasificadorva\\clasificadorva\\clasificadorva.csproj",
+        "projectPath": "C:\\Users\\Cristhian\\source\\repos\\CustomVision\\clasificadorva\\clasificadorva\\clasificadorva.csproj",
         "packagesPath": "C:\\Users\\Cristhian\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Cristhian\\source\\repos\\clasificadorva\\clasificadorva\\clasificadorva\\obj\\",
+        "outputPath": "C:\\Users\\Cristhian\\source\\repos\\CustomVision\\clasificadorva\\clasificadorva\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Microsoft\\Xamarin\\NuGet\\",

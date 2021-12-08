@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "ydauSd06IRC9FCyqT0DTohi4HVcTWNs0w4IZjsr4JMnSKE9SdCK+D2+/KHFNdasSNrGCkNN8lPfheLIHjzpKqA==",
+  "dgSpecHash": "/mqFNqXJCG2FNdcnkCkV/I8+zGgKOI/FyiFR3hbHsQ78YGA28iKIYIIaZRkCOp3XjcVE97ZZB2CQdDzf8UCYfw==",
   "success": true,
-  "projectFilePath": "C:\\Users\\Cristhian\\source\\repos\\clasificadorva\\clasificadorva\\clasificadorva.iOS\\clasificadorva.iOS.csproj",
+  "projectFilePath": "C:\\Users\\Cristhian\\source\\repos\\CustomVision\\clasificadorva\\clasificadorva.iOS\\clasificadorva.iOS.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\Cristhian\\.nuget\\packages\\xam.plugin.media\\5.0.1\\xam.plugin.media.5.0.1.nupkg.sha512",
     "C:\\Microsoft\\Xamarin\\NuGet\\xamarin.essentials\\1.5.3.2\\xamarin.essentials.1.5.3.2.nupkg.sha512",

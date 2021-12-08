@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "gK1gnw1qQgEthWu0NkeSaJwycDLQIWkXOjamCh6tOki4MQdr6o6JhnDRQBgfsOr3ApYQHWwAIgnGCmPSWDeUmA==",
+  "dgSpecHash": "8QBej+BIe51/8EDOmHcZy6k13kfg2Pystu1+oPp3CLtB/DiF4XpAV5unTbO34/579caZpgZyDPcMEMP3YUTpXA==",
   "success": true,
-  "projectFilePath": "C:\\Users\\Cristhian\\source\\repos\\clasificadorva\\clasificadorva\\clasificadorva.Android\\clasificadorva.Android.csproj",
+  "projectFilePath": "C:\\Users\\Cristhian\\source\\repos\\CustomVision\\clasificadorva\\clasificadorva.Android\\clasificadorva.Android.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\Cristhian\\.nuget\\packages\\xam.plugin.media\\5.0.1\\xam.plugin.media.5.0.1.nupkg.sha512",
     "C:\\Microsoft\\Xamarin\\NuGet\\xamarin.android.arch.core.common\\1.1.1.3\\xamarin.android.arch.core.common.1.1.1.3.nupkg.sha512",

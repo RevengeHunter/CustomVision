@@ -1088,11 +1088,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\Cristhian\\source\\repos\\clasificadorva\\clasificadorva\\clasificadorva.iOS\\clasificadorva.iOS.csproj",
+      "projectUniqueName": "C:\\Users\\Cristhian\\source\\repos\\CustomVision\\clasificadorva\\clasificadorva.iOS\\clasificadorva.iOS.csproj",
       "projectName": "clasificadorva.iOS",
-      "projectPath": "C:\\Users\\Cristhian\\source\\repos\\clasificadorva\\clasificadorva\\clasificadorva.iOS\\clasificadorva.iOS.csproj",
+      "projectPath": "C:\\Users\\Cristhian\\source\\repos\\CustomVision\\clasificadorva\\clasificadorva.iOS\\clasificadorva.iOS.csproj",
       "packagesPath": "C:\\Users\\Cristhian\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\Cristhian\\source\\repos\\clasificadorva\\clasificadorva\\clasificadorva.iOS\\obj\\",
+      "outputPath": "C:\\Users\\Cristhian\\source\\repos\\CustomVision\\clasificadorva\\clasificadorva.iOS\\obj\\",
       "projectStyle": "PackageReference",
       "skipContentFileWrite": true,
       "fallbackFolders": [
@@ -1113,8 +1113,8 @@
       "frameworks": {
         "xamarinios10": {
           "projectReferences": {
-            "C:\\Users\\Cristhian\\source\\repos\\clasificadorva\\clasificadorva\\clasificadorva\\clasificadorva.csproj": {
-              "projectPath": "C:\\Users\\Cristhian\\source\\repos\\clasificadorva\\clasificadorva\\clasificadorva\\clasificadorva.csproj"
+            "C:\\Users\\Cristhian\\source\\repos\\CustomVision\\clasificadorva\\clasificadorva\\clasificadorva.csproj": {
+              "projectPath": "C:\\Users\\Cristhian\\source\\repos\\CustomVision\\clasificadorva\\clasificadorva\\clasificadorva.csproj"
             }
           }
         }

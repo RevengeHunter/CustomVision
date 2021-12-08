@@ -686,11 +686,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\Cristhian\\source\\repos\\clasificadorva\\clasificadorva\\clasificadorva\\clasificadorva.csproj",
+      "projectUniqueName": "C:\\Users\\Cristhian\\source\\repos\\CustomVision\\clasificadorva\\clasificadorva\\clasificadorva.csproj",
       "projectName": "clasificadorva",
-      "projectPath": "C:\\Users\\Cristhian\\source\\repos\\clasificadorva\\clasificadorva\\clasificadorva\\clasificadorva.csproj",
+      "projectPath": "C:\\Users\\Cristhian\\source\\repos\\CustomVision\\clasificadorva\\clasificadorva\\clasificadorva.csproj",
       "packagesPath": "C:\\Users\\Cristhian\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\Cristhian\\source\\repos\\clasificadorva\\clasificadorva\\clasificadorva\\obj\\",
+      "outputPath": "C:\\Users\\Cristhian\\source\\repos\\CustomVision\\clasificadorva\\clasificadorva\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Microsoft\\Xamarin\\NuGet\\",

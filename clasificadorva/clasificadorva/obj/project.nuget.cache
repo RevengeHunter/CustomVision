@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "ONi2Sgx0okJWA9XwpzDNQ3ZARV6Iz5z5DmxYBRMb1ora0t93SshtJLdO3e5aLF57YoM8K799xSno2IUIDVQ4Uw==",
+  "dgSpecHash": "cHOdN748sJPQYUT6qtHSYou8mlA1UGrnaImpBzcMVLgPUZZ4CWcHvKS94t/4XQPyeuIhdTCafSioPZ51tHsaUQ==",
   "success": true,
-  "projectFilePath": "C:\\Users\\Cristhian\\source\\repos\\clasificadorva\\clasificadorva\\clasificadorva\\clasificadorva.csproj",
+  "projectFilePath": "C:\\Users\\Cristhian\\source\\repos\\CustomVision\\clasificadorva\\clasificadorva\\clasificadorva.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\Cristhian\\.nuget\\packages\\microsoft.netcore.platforms\\1.1.0\\microsoft.netcore.platforms.1.1.0.nupkg.sha512",
     "C:\\PROGRAM FILES\\DOTNET\\sdk\\NuGetFallbackFolder\\netstandard.library\\2.0.3\\netstandard.library.2.0.3.nupkg.sha512",

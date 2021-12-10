@@ -106,6 +106,7 @@ namespace clasificadorva.ViewModels
             PathImg = _foto.Path;
         }
 
+
         private async void TakePicture(object obj)
         {
             await CrossMedia.Current.Initialize();
@@ -115,15 +116,15 @@ namespace clasificadorva.ViewModels
                 return;
             }
 
-            var _pfoto = await CrossMedia.Current.TakePhotoAsync(new StoreCameraMediaOptions
+            _foto = await CrossMedia.Current.TakePhotoAsync(new StoreCameraMediaOptions
             {
-                Directory = "Vision",
+                Directory = "Pictures",
                 Name = "Target.jpg"
             });
 
             if (_foto == null) return;
 
-            PathImg = _pfoto.Path;
+            PathImg = _foto.Path;
         }
 
         

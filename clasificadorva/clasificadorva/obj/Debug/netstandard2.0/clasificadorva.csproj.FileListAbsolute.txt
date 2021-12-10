@@ -21,7 +21,6 @@ C:\Users\Cristhian\source\repos\CustomVision\clasificadorva\clasificadorva\bin\D
 C:\Users\Cristhian\source\repos\CustomVision\clasificadorva\clasificadorva\bin\Debug\netstandard2.0\clasificadorva.dll
 C:\Users\Cristhian\source\repos\CustomVision\clasificadorva\clasificadorva\bin\Debug\netstandard2.0\ref\clasificadorva.dll
 C:\Users\Cristhian\source\repos\CustomVision\clasificadorva\clasificadorva\bin\Debug\netstandard2.0\clasificadorva.pdb
-C:\Users\Cristhian\source\repos\CustomVision\clasificadorva\clasificadorva\obj\Debug\netstandard2.0\clasificadorva.csprojAssemblyReference.cache
 C:\Users\Cristhian\source\repos\CustomVision\clasificadorva\clasificadorva\obj\Debug\netstandard2.0\App.xaml.g.cs
 C:\Users\Cristhian\source\repos\CustomVision\clasificadorva\clasificadorva\obj\Debug\netstandard2.0\AppShell.xaml.g.cs
 C:\Users\Cristhian\source\repos\CustomVision\clasificadorva\clasificadorva\obj\Debug\netstandard2.0\Views\AboutPage.xaml.g.cs

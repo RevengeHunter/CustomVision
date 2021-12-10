@@ -944,3 +944,4 @@ C:\Users\Cristhian\source\repos\CustomVision\clasificadorva\clasificadorva.Andro
 C:\Users\Cristhian\source\repos\CustomVision\clasificadorva\clasificadorva.Android\obj\Debug\90\stamp\_GenerateJavaStubs.stamp
 C:\Users\Cristhian\source\repos\CustomVision\clasificadorva\clasificadorva.Android\obj\Debug\90\stamp\_GeneratePackageManagerJava.stamp
 C:\Users\Cristhian\source\repos\CustomVision\clasificadorva\clasificadorva.Android\obj\Debug\90\stamp\_ResolveLibraryProjectImports.stamp
+C:\Users\Cristhian\source\repos\CustomVision\clasificadorva\clasificadorva.Android\obj\Debug\90\res\xml\file_paths.xml

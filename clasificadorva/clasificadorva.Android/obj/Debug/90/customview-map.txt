@@ -22,6 +22,7 @@ background;obj\Debug\90\res\mipmap-anydpi-v26\icon_round.xml
 cache-path;C:\Users\Cristhian\source\repos\CustomVision\clasificadorva\clasificadorva.Android\obj\Debug\90\lp\39\jl\res\xml\xamarin_essentials_fileprovider_file_paths.xml
 color;obj\Debug\90\res\values\colors.xml
 external-cache-path;C:\Users\Cristhian\source\repos\CustomVision\clasificadorva\clasificadorva.Android\obj\Debug\90\lp\39\jl\res\xml\xamarin_essentials_fileprovider_file_paths.xml
+external-files-path;obj\Debug\90\res\xml\file_paths.xml
 external-path;C:\Users\Cristhian\source\repos\CustomVision\clasificadorva\clasificadorva.Android\obj\Debug\90\lp\39\jl\res\xml\xamarin_essentials_fileprovider_file_paths.xml
 foreground;obj\Debug\90\res\mipmap-anydpi-v26\icon.xml
 foreground;obj\Debug\90\res\mipmap-anydpi-v26\icon_round.xml
@@ -29,6 +30,7 @@ FrameLayout;C:\Users\Cristhian\source\repos\CustomVision\clasificadorva\clasific
 item;C:\Users\Cristhian\source\repos\CustomVision\clasificadorva\clasificadorva.Android\obj\Debug\90\lp\40\jl\res\values\styles.xml
 LinearLayout;C:\Users\Cristhian\source\repos\CustomVision\clasificadorva\clasificadorva.Android\obj\Debug\90\lp\40\jl\res\layout\bottomtablayout.xml
 paths;C:\Users\Cristhian\source\repos\CustomVision\clasificadorva\clasificadorva.Android\obj\Debug\90\lp\39\jl\res\xml\xamarin_essentials_fileprovider_file_paths.xml
+paths;obj\Debug\90\res\xml\file_paths.xml
 resources;C:\Users\Cristhian\source\repos\CustomVision\clasificadorva\clasificadorva.Android\obj\Debug\90\lp\40\jl\res\values\styles.xml
 resources;obj\Debug\90\res\values\colors.xml
 resources;obj\Debug\90\res\values\styles.xml

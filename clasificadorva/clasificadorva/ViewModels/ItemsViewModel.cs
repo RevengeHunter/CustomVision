@@ -8,6 +8,7 @@ using Xamarin.Forms;
 using clasificadorva.Models;
 using clasificadorva.Views;
 using Plugin.Media.Abstractions;
+using Plugin.Media;
 
 namespace clasificadorva.ViewModels
 {
@@ -18,7 +19,8 @@ namespace clasificadorva.ViewModels
 
         private MediaFile _foto = null;
         private Item _selectedItem;
-
+        private string pathImg;
+        
         public ObservableCollection<Item> Items { get; }
         public Command LoadItemsCommand { get; }
         public Command AddItemCommand { get; }
@@ -32,13 +34,10 @@ namespace clasificadorva.ViewModels
             Title = "Clasificar";
             Items = new ObservableCollection<Item>();
             LoadItemsCommand = new Command(async () => await ExecuteLoadItemsCommand());
-
             ItemTapped = new Command<Item>(OnItemSelected);
-
             AddItemCommand = new Command(OnAddItem);
             SelectImagenCommand = new Command(SelectImagen);
             TakePictureCommand = new Command(TakePicture);
-            ClassifyCommand = new Command(Classify);
         }
 
         async Task ExecuteLoadItemsCommand()
@@ -94,29 +93,39 @@ namespace clasificadorva.ViewModels
             await Shell.Current.GoToAsync($"{nameof(ItemDetailPage)}?{nameof(ItemDetailViewModel.ItemId)}={item.Id}");
         }
 
+        public string PathImg
+        {
+            get => pathImg;
+            set => SetProperty(ref pathImg, value);
+        }
+
         private async void SelectImagen(object obj)
         {
-            await Plugin.Media.CrossMedia.Current.Initialize();
-            _foto = await Plugin.Media.CrossMedia.Current.PickPhotoAsync(new PickMediaOptions());
-            
-
+            await CrossMedia.Current.Initialize();
+            _foto = await CrossMedia.Current.PickPhotoAsync(new PickMediaOptions());
+            PathImg = _foto.Path;
         }
 
         private async void TakePicture(object obj)
         {
-            await Plugin.Media.CrossMedia.Current.Initialize();
+            await CrossMedia.Current.Initialize();
 
-            _foto = await Plugin.Media.CrossMedia.Current.TakePhotoAsync(new StoreCameraMediaOptions()
+            if (!CrossMedia.Current.IsCameraAvailable || !CrossMedia.Current.IsTakePhotoSupported)
+            {
+                return;
+            }
+
+            var _pfoto = await CrossMedia.Current.TakePhotoAsync(new StoreCameraMediaOptions
             {
                 Directory = "Vision",
                 Name = "Target.jpg"
             });
+
+            if (_foto == null) return;
+
+            PathImg = _pfoto.Path;
         }
 
-        private async void Classify(object obj)
-        {
-            
-        }
-
+        
     }
 }

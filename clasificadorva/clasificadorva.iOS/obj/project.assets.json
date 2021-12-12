@@ -2,6 +2,130 @@
   "version": 3,
   "targets": {
     "Xamarin.iOS,Version=v1.0": {
+      "Acr.Support/2.1.0": {
+        "type": "package",
+        "compile": {
+          "lib/Xamarin.iOS10/Acr.Support.iOS.dll": {}
+        },
+        "runtime": {
+          "lib/Xamarin.iOS10/Acr.Support.iOS.dll": {}
+        }
+      },
+      "Acr.UserDialogs/6.5.1": {
+        "type": "package",
+        "dependencies": {
+          "Acr.Support": "[2.1.0, 3.0.0)",
+          "BTProgressHUD": "[1.2.0.5, 2.0.0)",
+          "Splat": "[2.0.0, 3.0.0)"
+        },
+        "compile": {
+          "lib/Xamarin.iOS10/Acr.UserDialogs.Interface.dll": {},
+          "lib/Xamarin.iOS10/Acr.UserDialogs.dll": {}
+        },
+        "runtime": {
+          "lib/Xamarin.iOS10/Acr.UserDialogs.Interface.dll": {},
+          "lib/Xamarin.iOS10/Acr.UserDialogs.dll": {}
+        }
+      },
+      "BTProgressHUD/1.2.0.5": {
+        "type": "package",
+        "compile": {
+          "lib/Xamarin.iOS10/BTProgressHUD.dll": {}
+        },
+        "runtime": {
+          "lib/Xamarin.iOS10/BTProgressHUD.dll": {}
+        }
+      },
+      "Microsoft.Azure.CognitiveServices.Vision.CustomVision.Prediction/2.0.0": {
+        "type": "package",
+        "dependencies": {
+          "Microsoft.Rest.ClientRuntime": "[2.3.20, 3.0.0)",
+          "Microsoft.Rest.ClientRuntime.Azure": "[3.3.18, 4.0.0)",
+          "Newtonsoft.Json": "10.0.3",
+          "System.Net.Http": "4.3.4"
+        },
+        "compile": {
+          "lib/netstandard2.0/Microsoft.Azure.CognitiveServices.Vision.CustomVision.Prediction.dll": {}
+        },
+        "runtime": {
+          "lib/netstandard2.0/Microsoft.Azure.CognitiveServices.Vision.CustomVision.Prediction.dll": {}
+        }
+      },
+      "Microsoft.Rest.ClientRuntime/2.3.20": {
+        "type": "package",
+        "dependencies": {
+          "Newtonsoft.Json": "10.0.3"
+        },
+        "compile": {
+          "lib/netstandard2.0/Microsoft.Rest.ClientRuntime.dll": {}
+        },
+        "runtime": {
+          "lib/netstandard2.0/Microsoft.Rest.ClientRuntime.dll": {}
+        }
+      },
+      "Microsoft.Rest.ClientRuntime.Azure/3.3.18": {
+        "type": "package",
+        "dependencies": {
+          "Microsoft.Rest.ClientRuntime": "[2.3.17, 3.0.0)",
+          "NETStandard.Library": "1.6.1",
+          "Newtonsoft.Json": "10.0.3"
+        },
+        "compile": {
+          "lib/netstandard1.4/Microsoft.Rest.ClientRuntime.Azure.dll": {}
+        },
+        "runtime": {
+          "lib/netstandard1.4/Microsoft.Rest.ClientRuntime.Azure.dll": {}
+        }
+      },
+      "Newtonsoft.Json/13.0.1": {
+        "type": "package",
+        "compile": {
+          "lib/netstandard2.0/Newtonsoft.Json.dll": {}
+        },
+        "runtime": {
+          "lib/netstandard2.0/Newtonsoft.Json.dll": {}
+        }
+      },
+      "RestSharp/106.15.0": {
+        "type": "package",
+        "compile": {
+          "lib/netstandard2.0/RestSharp.dll": {}
+        },
+        "runtime": {
+          "lib/netstandard2.0/RestSharp.dll": {}
+        }
+      },
+      "Splat/2.0.0": {
+        "type": "package",
+        "compile": {
+          "lib/Xamarin.iOS10/Splat.dll": {}
+        },
+        "runtime": {
+          "lib/Xamarin.iOS10/Splat.dll": {}
+        }
+      },
+      "System.Net.Http/4.3.4": {
+        "type": "package",
+        "frameworkAssemblies": [
+          "System.Net.Http"
+        ],
+        "compile": {
+          "ref/xamarinios10/_._": {}
+        },
+        "runtime": {
+          "lib/xamarinios10/_._": {}
+        },
+        "runtimeTargets": {
+          "runtimes/unix/lib/netstandard1.6/System.Net.Http.dll": {
+            "assetType": "runtime",
+            "rid": "unix"
+          },
+          "runtimes/win/lib/netstandard1.3/System.Net.Http.dll": {
+            "assetType": "runtime",
+            "rid": "win"
+          }
+        }
+      },
       "Xam.Plugin.Media/5.0.1": {
         "type": "package",
         "dependencies": {
@@ -155,6 +279,10 @@
         "type": "project",
         "framework": ".NETStandard,Version=v2.0",
         "dependencies": {
+          "Acr.UserDialogs": "6.5.1",
+          "Microsoft.Azure.CognitiveServices.Vision.CustomVision.Prediction": "2.0.0",
+          "Newtonsoft.Json": "13.0.1",
+          "RestSharp": "106.15.0",
           "Xam.Plugin.Media": "5.0.1",
           "Xamarin.Essentials": "1.5.3.2",
           "Xamarin.Forms": "4.6.0.1141"
@@ -168,6 +296,120 @@
       }
     },
     "Xamarin.iOS,Version=v1.0/win": {
+      "Acr.Support/2.1.0": {
+        "type": "package",
+        "compile": {
+          "lib/Xamarin.iOS10/Acr.Support.iOS.dll": {}
+        },
+        "runtime": {
+          "lib/Xamarin.iOS10/Acr.Support.iOS.dll": {}
+        }
+      },
+      "Acr.UserDialogs/6.5.1": {
+        "type": "package",
+        "dependencies": {
+          "Acr.Support": "[2.1.0, 3.0.0)",
+          "BTProgressHUD": "[1.2.0.5, 2.0.0)",
+          "Splat": "[2.0.0, 3.0.0)"
+        },
+        "compile": {
+          "lib/Xamarin.iOS10/Acr.UserDialogs.Interface.dll": {},
+          "lib/Xamarin.iOS10/Acr.UserDialogs.dll": {}
+        },
+        "runtime": {
+          "lib/Xamarin.iOS10/Acr.UserDialogs.Interface.dll": {},
+          "lib/Xamarin.iOS10/Acr.UserDialogs.dll": {}
+        }
+      },
+      "BTProgressHUD/1.2.0.5": {
+        "type": "package",
+        "compile": {
+          "lib/Xamarin.iOS10/BTProgressHUD.dll": {}
+        },
+        "runtime": {
+          "lib/Xamarin.iOS10/BTProgressHUD.dll": {}
+        }
+      },
+      "Microsoft.Azure.CognitiveServices.Vision.CustomVision.Prediction/2.0.0": {
+        "type": "package",
+        "dependencies": {
+          "Microsoft.Rest.ClientRuntime": "[2.3.20, 3.0.0)",
+          "Microsoft.Rest.ClientRuntime.Azure": "[3.3.18, 4.0.0)",
+          "Newtonsoft.Json": "10.0.3",
+          "System.Net.Http": "4.3.4"
+        },
+        "compile": {
+          "lib/netstandard2.0/Microsoft.Azure.CognitiveServices.Vision.CustomVision.Prediction.dll": {}
+        },
+        "runtime": {
+          "lib/netstandard2.0/Microsoft.Azure.CognitiveServices.Vision.CustomVision.Prediction.dll": {}
+        }
+      },
+      "Microsoft.Rest.ClientRuntime/2.3.20": {
+        "type": "package",
+        "dependencies": {
+          "Newtonsoft.Json": "10.0.3"
+        },
+        "compile": {
+          "lib/netstandard2.0/Microsoft.Rest.ClientRuntime.dll": {}
+        },
+        "runtime": {
+          "lib/netstandard2.0/Microsoft.Rest.ClientRuntime.dll": {}
+        }
+      },
+      "Microsoft.Rest.ClientRuntime.Azure/3.3.18": {
+        "type": "package",
+        "dependencies": {
+          "Microsoft.Rest.ClientRuntime": "[2.3.17, 3.0.0)",
+          "NETStandard.Library": "1.6.1",
+          "Newtonsoft.Json": "10.0.3"
+        },
+        "compile": {
+          "lib/netstandard1.4/Microsoft.Rest.ClientRuntime.Azure.dll": {}
+        },
+        "runtime": {
+          "lib/netstandard1.4/Microsoft.Rest.ClientRuntime.Azure.dll": {}
+        }
+      },
+      "Newtonsoft.Json/13.0.1": {
+        "type": "package",
+        "compile": {
+          "lib/netstandard2.0/Newtonsoft.Json.dll": {}
+        },
+        "runtime": {
+          "lib/netstandard2.0/Newtonsoft.Json.dll": {}
+        }
+      },
+      "RestSharp/106.15.0": {
+        "type": "package",
+        "compile": {
+          "lib/netstandard2.0/RestSharp.dll": {}
+        },
+        "runtime": {
+          "lib/netstandard2.0/RestSharp.dll": {}
+        }
+      },
+      "Splat/2.0.0": {
+        "type": "package",
+        "compile": {
+          "lib/Xamarin.iOS10/Splat.dll": {}
+        },
+        "runtime": {
+          "lib/Xamarin.iOS10/Splat.dll": {}
+        }
+      },
+      "System.Net.Http/4.3.4": {
+        "type": "package",
+        "frameworkAssemblies": [
+          "System.Net.Http"
+        ],
+        "compile": {
+          "ref/xamarinios10/_._": {}
+        },
+        "runtime": {
+          "runtimes/win/lib/netstandard1.3/System.Net.Http.dll": {}
+        }
+      },
       "Xam.Plugin.Media/5.0.1": {
         "type": "package",
         "dependencies": {
@@ -321,6 +563,10 @@
         "type": "project",
         "framework": ".NETStandard,Version=v2.0",
         "dependencies": {
+          "Acr.UserDialogs": "6.5.1",
+          "Microsoft.Azure.CognitiveServices.Vision.CustomVision.Prediction": "2.0.0",
+          "Newtonsoft.Json": "13.0.1",
+          "RestSharp": "106.15.0",
           "Xam.Plugin.Media": "5.0.1",
           "Xamarin.Essentials": "1.5.3.2",
           "Xamarin.Forms": "4.6.0.1141"
@@ -334,6 +580,120 @@
       }
     },
     "Xamarin.iOS,Version=v1.0/win-x64": {
+      "Acr.Support/2.1.0": {
+        "type": "package",
+        "compile": {
+          "lib/Xamarin.iOS10/Acr.Support.iOS.dll": {}
+        },
+        "runtime": {
+          "lib/Xamarin.iOS10/Acr.Support.iOS.dll": {}
+        }
+      },
+      "Acr.UserDialogs/6.5.1": {
+        "type": "package",
+        "dependencies": {
+          "Acr.Support": "[2.1.0, 3.0.0)",
+          "BTProgressHUD": "[1.2.0.5, 2.0.0)",
+          "Splat": "[2.0.0, 3.0.0)"
+        },
+        "compile": {
+          "lib/Xamarin.iOS10/Acr.UserDialogs.Interface.dll": {},
+          "lib/Xamarin.iOS10/Acr.UserDialogs.dll": {}
+        },
+        "runtime": {
+          "lib/Xamarin.iOS10/Acr.UserDialogs.Interface.dll": {},
+          "lib/Xamarin.iOS10/Acr.UserDialogs.dll": {}
+        }
+      },
+      "BTProgressHUD/1.2.0.5": {
+        "type": "package",
+        "compile": {
+          "lib/Xamarin.iOS10/BTProgressHUD.dll": {}
+        },
+        "runtime": {
+          "lib/Xamarin.iOS10/BTProgressHUD.dll": {}
+        }
+      },
+      "Microsoft.Azure.CognitiveServices.Vision.CustomVision.Prediction/2.0.0": {
+        "type": "package",
+        "dependencies": {
+          "Microsoft.Rest.ClientRuntime": "[2.3.20, 3.0.0)",
+          "Microsoft.Rest.ClientRuntime.Azure": "[3.3.18, 4.0.0)",
+          "Newtonsoft.Json": "10.0.3",
+          "System.Net.Http": "4.3.4"
+        },
+        "compile": {
+          "lib/netstandard2.0/Microsoft.Azure.CognitiveServices.Vision.CustomVision.Prediction.dll": {}
+        },
+        "runtime": {
+          "lib/netstandard2.0/Microsoft.Azure.CognitiveServices.Vision.CustomVision.Prediction.dll": {}
+        }
+      },
+      "Microsoft.Rest.ClientRuntime/2.3.20": {
+        "type": "package",
+        "dependencies": {
+          "Newtonsoft.Json": "10.0.3"
+        },
+        "compile": {
+          "lib/netstandard2.0/Microsoft.Rest.ClientRuntime.dll": {}
+        },
+        "runtime": {
+          "lib/netstandard2.0/Microsoft.Rest.ClientRuntime.dll": {}
+        }
+      },
+      "Microsoft.Rest.ClientRuntime.Azure/3.3.18": {
+        "type": "package",
+        "dependencies": {
+          "Microsoft.Rest.ClientRuntime": "[2.3.17, 3.0.0)",
+          "NETStandard.Library": "1.6.1",
+          "Newtonsoft.Json": "10.0.3"
+        },
+        "compile": {
+          "lib/netstandard1.4/Microsoft.Rest.ClientRuntime.Azure.dll": {}
+        },
+        "runtime": {
+          "lib/netstandard1.4/Microsoft.Rest.ClientRuntime.Azure.dll": {}
+        }
+      },
+      "Newtonsoft.Json/13.0.1": {
+        "type": "package",
+        "compile": {
+          "lib/netstandard2.0/Newtonsoft.Json.dll": {}
+        },
+        "runtime": {
+          "lib/netstandard2.0/Newtonsoft.Json.dll": {}
+        }
+      },
+      "RestSharp/106.15.0": {
+        "type": "package",
+        "compile": {
+          "lib/netstandard2.0/RestSharp.dll": {}
+        },
+        "runtime": {
+          "lib/netstandard2.0/RestSharp.dll": {}
+        }
+      },
+      "Splat/2.0.0": {
+        "type": "package",
+        "compile": {
+          "lib/Xamarin.iOS10/Splat.dll": {}
+        },
+        "runtime": {
+          "lib/Xamarin.iOS10/Splat.dll": {}
+        }
+      },
+      "System.Net.Http/4.3.4": {
+        "type": "package",
+        "frameworkAssemblies": [
+          "System.Net.Http"
+        ],
+        "compile": {
+          "ref/xamarinios10/_._": {}
+        },
+        "runtime": {
+          "lib/xamarinios10/_._": {}
+        }
+      },
       "Xam.Plugin.Media/5.0.1": {
         "type": "package",
         "dependencies": {
@@ -487,6 +847,10 @@
         "type": "project",
         "framework": ".NETStandard,Version=v2.0",
         "dependencies": {
+          "Acr.UserDialogs": "6.5.1",
+          "Microsoft.Azure.CognitiveServices.Vision.CustomVision.Prediction": "2.0.0",
+          "Newtonsoft.Json": "13.0.1",
+          "RestSharp": "106.15.0",
           "Xam.Plugin.Media": "5.0.1",
           "Xamarin.Essentials": "1.5.3.2",
           "Xamarin.Forms": "4.6.0.1141"
@@ -500,6 +864,120 @@
       }
     },
     "Xamarin.iOS,Version=v1.0/win-x86": {
+      "Acr.Support/2.1.0": {
+        "type": "package",
+        "compile": {
+          "lib/Xamarin.iOS10/Acr.Support.iOS.dll": {}
+        },
+        "runtime": {
+          "lib/Xamarin.iOS10/Acr.Support.iOS.dll": {}
+        }
+      },
+      "Acr.UserDialogs/6.5.1": {
+        "type": "package",
+        "dependencies": {
+          "Acr.Support": "[2.1.0, 3.0.0)",
+          "BTProgressHUD": "[1.2.0.5, 2.0.0)",
+          "Splat": "[2.0.0, 3.0.0)"
+        },
+        "compile": {
+          "lib/Xamarin.iOS10/Acr.UserDialogs.Interface.dll": {},
+          "lib/Xamarin.iOS10/Acr.UserDialogs.dll": {}
+        },
+        "runtime": {
+          "lib/Xamarin.iOS10/Acr.UserDialogs.Interface.dll": {},
+          "lib/Xamarin.iOS10/Acr.UserDialogs.dll": {}
+        }
+      },
+      "BTProgressHUD/1.2.0.5": {
+        "type": "package",
+        "compile": {
+          "lib/Xamarin.iOS10/BTProgressHUD.dll": {}
+        },
+        "runtime": {
+          "lib/Xamarin.iOS10/BTProgressHUD.dll": {}
+        }
+      },
+      "Microsoft.Azure.CognitiveServices.Vision.CustomVision.Prediction/2.0.0": {
+        "type": "package",
+        "dependencies": {
+          "Microsoft.Rest.ClientRuntime": "[2.3.20, 3.0.0)",
+          "Microsoft.Rest.ClientRuntime.Azure": "[3.3.18, 4.0.0)",
+          "Newtonsoft.Json": "10.0.3",
+          "System.Net.Http": "4.3.4"
+        },
+        "compile": {
+          "lib/netstandard2.0/Microsoft.Azure.CognitiveServices.Vision.CustomVision.Prediction.dll": {}
+        },
+        "runtime": {
+          "lib/netstandard2.0/Microsoft.Azure.CognitiveServices.Vision.CustomVision.Prediction.dll": {}
+        }
+      },
+      "Microsoft.Rest.ClientRuntime/2.3.20": {
+        "type": "package",
+        "dependencies": {
+          "Newtonsoft.Json": "10.0.3"
+        },
+        "compile": {
+          "lib/netstandard2.0/Microsoft.Rest.ClientRuntime.dll": {}
+        },
+        "runtime": {
+          "lib/netstandard2.0/Microsoft.Rest.ClientRuntime.dll": {}
+        }
+      },
+      "Microsoft.Rest.ClientRuntime.Azure/3.3.18": {
+        "type": "package",
+        "dependencies": {
+          "Microsoft.Rest.ClientRuntime": "[2.3.17, 3.0.0)",
+          "NETStandard.Library": "1.6.1",
+          "Newtonsoft.Json": "10.0.3"
+        },
+        "compile": {
+          "lib/netstandard1.4/Microsoft.Rest.ClientRuntime.Azure.dll": {}
+        },
+        "runtime": {
+          "lib/netstandard1.4/Microsoft.Rest.ClientRuntime.Azure.dll": {}
+        }
+      },
+      "Newtonsoft.Json/13.0.1": {
+        "type": "package",
+        "compile": {
+          "lib/netstandard2.0/Newtonsoft.Json.dll": {}
+        },
+        "runtime": {
+          "lib/netstandard2.0/Newtonsoft.Json.dll": {}
+        }
+      },
+      "RestSharp/106.15.0": {
+        "type": "package",
+        "compile": {
+          "lib/netstandard2.0/RestSharp.dll": {}
+        },
+        "runtime": {
+          "lib/netstandard2.0/RestSharp.dll": {}
+        }
+      },
+      "Splat/2.0.0": {
+        "type": "package",
+        "compile": {
+          "lib/Xamarin.iOS10/Splat.dll": {}
+        },
+        "runtime": {
+          "lib/Xamarin.iOS10/Splat.dll": {}
+        }
+      },
+      "System.Net.Http/4.3.4": {
+        "type": "package",
+        "frameworkAssemblies": [
+          "System.Net.Http"
+        ],
+        "compile": {
+          "ref/xamarinios10/_._": {}
+        },
+        "runtime": {
+          "lib/xamarinios10/_._": {}
+        }
+      },
       "Xam.Plugin.Media/5.0.1": {
         "type": "package",
         "dependencies": {
@@ -653,6 +1131,10 @@
         "type": "project",
         "framework": ".NETStandard,Version=v2.0",
         "dependencies": {
+          "Acr.UserDialogs": "6.5.1",
+          "Microsoft.Azure.CognitiveServices.Vision.CustomVision.Prediction": "2.0.0",
+          "Newtonsoft.Json": "13.0.1",
+          "RestSharp": "106.15.0",
           "Xam.Plugin.Media": "5.0.1",
           "Xamarin.Essentials": "1.5.3.2",
           "Xamarin.Forms": "4.6.0.1141"
@@ -667,6 +1149,242 @@
     }
   },
   "libraries": {
+    "Acr.Support/2.1.0": {
+      "sha512": "Kq/+sDIUxyEcDxwIB6ijtaUWzp/KV68rdYVLHQ26au7q3Y+7fqiqE0571VALlbYHlXMtFRd8ap3VeLw4lf/GWQ==",
+      "type": "package",
+      "path": "acr.support/2.1.0",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "acr.support.2.1.0.nupkg.sha512",
+        "acr.support.nuspec",
+        "lib/MonoAndroid10/Acr.Support.Android.dll",
+        "lib/MonoAndroid10/Acr.Support.Android.pdb",
+        "lib/Xamarin.iOS10/Acr.Support.iOS.dll",
+        "lib/Xamarin.tvOS10/Acr.Support.tvOS.dll",
+        "lib/Xamarin.tvOS10/Acr.Support.tvOS.dll.mdb",
+        "lib/Xamarin.tvOS10/Acr.Support.tvOS.pdb"
+      ]
+    },
+    "Acr.UserDialogs/6.5.1": {
+      "sha512": "Y0GGF+TuG+JOMe//LiNlrr2Hf+nD3/Irlie15pjkzspcR59WEi6N1UT4ZZNaQVE7fYrddTTnAsSco9XD6TbvNg==",
+      "type": "package",
+      "path": "acr.userdialogs/6.5.1",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "acr.userdialogs.6.5.1.nupkg.sha512",
+        "acr.userdialogs.nuspec",
+        "lib/MonoAndroid10/Acr.UserDialogs.Interface.dll",
+        "lib/MonoAndroid10/Acr.UserDialogs.Interface.pdb",
+        "lib/MonoAndroid10/Acr.UserDialogs.dll",
+        "lib/MonoAndroid10/Acr.UserDialogs.pdb",
+        "lib/Xamarin.iOS10/Acr.UserDialogs.Interface.dll",
+        "lib/Xamarin.iOS10/Acr.UserDialogs.Interface.pdb",
+        "lib/Xamarin.iOS10/Acr.UserDialogs.dll",
+        "lib/Xamarin.iOS10/Acr.UserDialogs.pdb",
+        "lib/netstandard1.1/Acr.UserDialogs.Interface.dll",
+        "lib/netstandard1.1/Acr.UserDialogs.Interface.pdb",
+        "lib/netstandard1.1/Acr.UserDialogs.deps.json",
+        "lib/netstandard1.1/Acr.UserDialogs.dll",
+        "lib/netstandard1.1/Acr.UserDialogs.pdb",
+        "lib/uap10.0/Acr.UserDialogs.Interface.dll",
+        "lib/uap10.0/Acr.UserDialogs.Interface.pdb",
+        "lib/uap10.0/Acr.UserDialogs.dll",
+        "lib/uap10.0/Acr.UserDialogs.pdb",
+        "lib/uap10.0/Acr.UserDialogs.pri",
+        "lib/uap10.0/Acr.UserDialogs/Acr.UserDialogs.xr.xml",
+        "lib/uap10.0/Acr.UserDialogs/ActionSheetContentDialog.xaml",
+        "lib/uap10.0/Acr.UserDialogs/DatePickerControl.xaml",
+        "lib/uap10.0/Acr.UserDialogs/LoginContentDialog.xaml",
+        "lib/uap10.0/Acr.UserDialogs/ProgressContentDialog.xaml",
+        "lib/uap10.0/Acr.UserDialogs/Properties/Acr.UserDialogs.rd.xml",
+        "lib/uap10.0/Acr.UserDialogs/TimePickerControl.xaml"
+      ]
+    },
+    "BTProgressHUD/1.2.0.5": {
+      "sha512": "6Kr2TReJWBVZ91zJBYsIu7pIOuWlCvuM/YcuN99X/jdt8B6XJSsBHBy8i/tV390bwPLOcFh3L5CniMil9WJn2A==",
+      "type": "package",
+      "path": "btprogresshud/1.2.0.5",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "btprogresshud.1.2.0.5.nupkg.sha512",
+        "btprogresshud.nuspec",
+        "lib/Xamarin.iOS10/BTProgressHUD.dll"
+      ]
+    },
+    "Microsoft.Azure.CognitiveServices.Vision.CustomVision.Prediction/2.0.0": {
+      "sha512": "QK2OPnxxQE4yI5WAulp69QNnbjBQGOH+HesEdN0NqP3Zqvam+dnqVTHyVmRWZSW78NM/H9OXqE79r+qncBBr3w==",
+      "type": "package",
+      "path": "microsoft.azure.cognitiveservices.vision.customvision.prediction/2.0.0",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "CHANGELOG.md",
+        "lib/net452/Microsoft.Azure.CognitiveServices.Vision.CustomVision.Prediction.dll",
+        "lib/net461/Microsoft.Azure.CognitiveServices.Vision.CustomVision.Prediction.dll",
+        "lib/netstandard1.4/Microsoft.Azure.CognitiveServices.Vision.CustomVision.Prediction.dll",
+        "lib/netstandard2.0/Microsoft.Azure.CognitiveServices.Vision.CustomVision.Prediction.dll",
+        "microsoft.azure.cognitiveservices.vision.customvision.prediction.2.0.0.nupkg.sha512",
+        "microsoft.azure.cognitiveservices.vision.customvision.prediction.nuspec",
+        "pkgicon.png"
+      ]
+    },
+    "Microsoft.Rest.ClientRuntime/2.3.20": {
+      "sha512": "bw/H1nO4JdnhTagPHWIFQwtlQ6rb2jqw5RTrqPsPqzrjhJxc7P6MyNGdf4pgHQdzdpBSNOfZTEQifoUkxmzYXQ==",
+      "type": "package",
+      "path": "microsoft.rest.clientruntime/2.3.20",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "lib/net452/Microsoft.Rest.ClientRuntime.dll",
+        "lib/net452/Microsoft.Rest.ClientRuntime.runtimeconfig.json",
+        "lib/net452/Microsoft.Rest.ClientRuntime.xml",
+        "lib/net461/Microsoft.Rest.ClientRuntime.dll",
+        "lib/net461/Microsoft.Rest.ClientRuntime.runtimeconfig.json",
+        "lib/net461/Microsoft.Rest.ClientRuntime.xml",
+        "lib/netstandard1.4/Microsoft.Rest.ClientRuntime.dll",
+        "lib/netstandard1.4/Microsoft.Rest.ClientRuntime.runtimeconfig.json",
+        "lib/netstandard1.4/Microsoft.Rest.ClientRuntime.xml",
+        "lib/netstandard2.0/Microsoft.Rest.ClientRuntime.dll",
+        "lib/netstandard2.0/Microsoft.Rest.ClientRuntime.runtimeconfig.json",
+        "lib/netstandard2.0/Microsoft.Rest.ClientRuntime.xml",
+        "microsoft.rest.clientruntime.2.3.20.nupkg.sha512",
+        "microsoft.rest.clientruntime.nuspec"
+      ]
+    },
+    "Microsoft.Rest.ClientRuntime.Azure/3.3.18": {
+      "sha512": "pCtem10PRQYvzRiwJVInsccsqB0NrTjW83NF3zWk1LpN3IS0AneZKq89RyogDT7mRMT1Li/mLY8N8kU6RAiK0g==",
+      "type": "package",
+      "path": "microsoft.rest.clientruntime.azure/3.3.18",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "lib/net452/Microsoft.Rest.ClientRuntime.Azure.dll",
+        "lib/net452/Microsoft.Rest.ClientRuntime.Azure.runtimeconfig.json",
+        "lib/net452/Microsoft.Rest.ClientRuntime.Azure.xml",
+        "lib/netstandard1.4/Microsoft.Rest.ClientRuntime.Azure.dll",
+        "lib/netstandard1.4/Microsoft.Rest.ClientRuntime.Azure.runtimeconfig.json",
+        "lib/netstandard1.4/Microsoft.Rest.ClientRuntime.Azure.xml",
+        "microsoft.rest.clientruntime.azure.3.3.18.nupkg.sha512",
+        "microsoft.rest.clientruntime.azure.nuspec"
+      ]
+    },
+    "Newtonsoft.Json/13.0.1": {
+      "sha512": "ppPFpBcvxdsfUonNcvITKqLl3bqxWbDCZIzDWHzjpdAHRFfZe0Dw9HmA0+za13IdyrgJwpkDTDA9fHaxOrt20A==",
+      "type": "package",
+      "path": "newtonsoft.json/13.0.1",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "LICENSE.md",
+        "lib/net20/Newtonsoft.Json.dll",
+        "lib/net20/Newtonsoft.Json.xml",
+        "lib/net35/Newtonsoft.Json.dll",
+        "lib/net35/Newtonsoft.Json.xml",
+        "lib/net40/Newtonsoft.Json.dll",
+        "lib/net40/Newtonsoft.Json.xml",
+        "lib/net45/Newtonsoft.Json.dll",
+        "lib/net45/Newtonsoft.Json.xml",
+        "lib/netstandard1.0/Newtonsoft.Json.dll",
+        "lib/netstandard1.0/Newtonsoft.Json.xml",
+        "lib/netstandard1.3/Newtonsoft.Json.dll",
+        "lib/netstandard1.3/Newtonsoft.Json.xml",
+        "lib/netstandard2.0/Newtonsoft.Json.dll",
+        "lib/netstandard2.0/Newtonsoft.Json.xml",
+        "newtonsoft.json.13.0.1.nupkg.sha512",
+        "newtonsoft.json.nuspec",
+        "packageIcon.png"
+      ]
+    },
+    "RestSharp/106.15.0": {
+      "sha512": "HM7ohR6AscxedNenrrl93DSZG6hvdnA7O+NHyCl/6ZKTfn8psQ9rRmUpcb9eWr+140vmfxoVemql0bUoeGEW3A==",
+      "type": "package",
+      "path": "restsharp/106.15.0",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "lib/net452/RestSharp.dll",
+        "lib/net452/RestSharp.xml",
+        "lib/netstandard2.0/RestSharp.dll",
+        "lib/netstandard2.0/RestSharp.xml",
+        "restsharp.106.15.0.nupkg.sha512",
+        "restsharp.nuspec",
+        "restsharp.png"
+      ]
+    },
+    "Splat/2.0.0": {
+      "sha512": "nu/hT3AaKHJvMlCTrbR2EG1n6nzOejbJsvx/LWiy7kM4PK7R/GdrtP5KN8VcXfi1x+mbPA3Mqcbe992D7DppyA==",
+      "type": "package",
+      "path": "splat/2.0.0",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "lib/MonoAndroid403/Splat.dll",
+        "lib/Net45/Splat.dll",
+        "lib/Portable-Win81+Wpa81/Splat.dll",
+        "lib/Xamarin.Mac20/Splat.dll",
+        "lib/Xamarin.iOS10/Splat.dll",
+        "lib/netstandard1.1/Splat.dll",
+        "splat.2.0.0.nupkg.sha512",
+        "splat.nuspec",
+        "src/AssemblyFinder.cs",
+        "src/Bitmaps.cs",
+        "src/Logging.cs",
+        "src/MemoizingMRUCache.cs",
+        "src/ModeDetector.cs",
+        "src/PlatformModeDetector.cs",
+        "src/PointExtensions.cs",
+        "src/RectangleExtensions.cs",
+        "src/ReflectionStubs.cs",
+        "src/ServiceLocation.cs",
+        "src/SizeExtensions.cs",
+        "src/TypeForwardedSystemDrawing.cs"
+      ]
+    },
+    "System.Net.Http/4.3.4": {
+      "sha512": "aOa2d51SEbmM+H+Csw7yJOuNZoHkrP2XnAurye5HWYgGVVU54YZDvsLUYRv6h18X3sPnjNCANmN7ZhIPiqMcjA==",
+      "type": "package",
+      "path": "system.net.http/4.3.4",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "ThirdPartyNotices.txt",
+        "dotnet_library_license.txt",
+        "lib/Xamarinmac20/_._",
+        "lib/monoandroid10/_._",
+        "lib/monotouch10/_._",
+        "lib/net45/_._",
+        "lib/net46/System.Net.Http.dll",
+        "lib/portable-net45+win8+wpa81/_._",
+        "lib/win8/_._",
+        "lib/wpa81/_._",
+        "lib/xamarinios10/_._",
+        "lib/xamarintvos10/_._",
+        "lib/xamarinwatchos10/_._",
+        "ref/Xamarinmac20/_._",
+        "ref/monoandroid10/_._",
+        "ref/monotouch10/_._",
+        "ref/net45/_._",
+        "ref/net46/System.Net.Http.dll",
+        "ref/netcore50/System.Net.Http.dll",
+        "ref/netstandard1.1/System.Net.Http.dll",
+        "ref/netstandard1.3/System.Net.Http.dll",
+        "ref/portable-net45+win8+wpa81/_._",
+        "ref/win8/_._",
+        "ref/wpa81/_._",
+        "ref/xamarinios10/_._",
+        "ref/xamarintvos10/_._",
+        "ref/xamarinwatchos10/_._",
+        "runtimes/unix/lib/netstandard1.6/System.Net.Http.dll",
+        "runtimes/win/lib/net46/System.Net.Http.dll",
+        "runtimes/win/lib/netcore50/System.Net.Http.dll",
+        "runtimes/win/lib/netstandard1.3/System.Net.Http.dll",
+        "system.net.http.4.3.4.nupkg.sha512",
+        "system.net.http.nuspec"
+      ]
+    },
     "Xam.Plugin.Media/5.0.1": {
       "sha512": "UUR31EEnhDVa4IXgVfQIAL3u9v6YAyppsb5UlO9MNJ4quGGkfcWX++JexjB1nMGqvCzsjAT2t32drKDIXoW4SQ==",
       "type": "package",
@@ -1076,6 +1794,7 @@
   },
   "projectFileDependencyGroups": {
     "Xamarin.iOS,Version=v1.0": [
+      "Acr.UserDialogs >= 6.5.1",
       "Xamarin.Essentials >= 1.5.3.2",
       "Xamarin.Forms >= 4.6.0.1141",
       "clasificadorva >= 1.0.0"
@@ -1123,6 +1842,10 @@
     "frameworks": {
       "xamarinios10": {
         "dependencies": {
+          "Acr.UserDialogs": {
+            "target": "Package",
+            "version": "[6.5.1, )"
+          },
           "Xamarin.Essentials": {
             "target": "Package",
             "version": "[1.5.3.2, )"

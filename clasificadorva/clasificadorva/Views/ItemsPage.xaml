@@ -17,6 +17,8 @@
     <RefreshView x:DataType="local:ItemsViewModel" Command="{Binding LoadItemsCommand}" IsRefreshing="{Binding IsBusy, Mode=TwoWay}">
         <StackLayout Padding="20">
             <Image Source="{Binding PathImg, Mode=TwoWay}" MinimumHeightRequest="100" MinimumWidthRequest="100"></Image>
+            <Label x:Name="Respuesta" TextColor="#176FFF" FontSize = "20" Text="{Binding AnswerText, Mode=TwoWay}"></Label>
+            <ProgressBar x:Name="Precicion" Progress="{Binding ProgressValue, Mode=TwoWay}" HeightRequest="25"/>
             <Button Text="Seleccionar Imagen" Command="{Binding SelectImagenCommand}" HorizontalOptions="FillAndExpand"></Button>
             <Button Text="Tomar Foto" Command="{Binding TakePictureCommand}" HorizontalOptions="FillAndExpand"></Button>
             <Button Text="Clasificar" Command="{Binding ClassifyCommand}" HorizontalOptions="FillAndExpand"></Button>

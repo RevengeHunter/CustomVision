@@ -22,18 +22,6 @@ namespace clasificadorva.ViewModels
 {
     public class ItemsViewModel : BaseViewModel
     {
-        //// You can obtain these values from the Keys and Endpoint page for your Custom Vision Prediction resource in the Azure Portal.
-        //private static string predictionEndpoint = "https://frutas0001-prediction.cognitiveservices.azure.com/";
-        //private static string predictionKey = "08112512dd8f46a18907bf1865373daf";
-
-        //// You can obtain this value from the Properties page for your Custom Vision Prediction resource in the Azure Portal. See the "Resource ID" field. This typically has a value such as:
-        //// /subscriptions/<your subscription ID>/resourceGroups/<your resource group>/providers/Microsoft.CognitiveServices/accounts/<your Custom Vision prediction resource name>
-        //private static string predictionResourceId = "/subscriptions/09dacd68-3241-4ed9-b024-2ac27e5d471d/resourceGroups/cip2021/providers/Microsoft.CognitiveServices/accounts/frutas0001-Prediction";
-
-        ////private static Iteration iteration;
-        //private static string publishedModelName = "fruit_classify_0021";
-        private static MemoryStream testImage;
-
         public const string ServiceApiUrl = "https://frutas0001-prediction.cognitiveservices.azure.com/customvision/v3.0/Prediction/805d7473-fe24-468f-aaba-df4ceea587cc/classify/iterations/fruit_classify_0021/image";
         public const string ApiKey = "08112512dd8f46a18907bf1865373daf";//"PON_TU_API_KEY_AQUI";
 
@@ -165,19 +153,6 @@ namespace clasificadorva.ViewModels
             PathImg = _foto.Path;
         }
 
-        
-
-        private static CustomVisionPredictionClient AuthenticatePrediction(string endpoint, string predictionKey)
-        {
-            
-            // Create a prediction endpoint, passing in the obtained prediction key
-            CustomVisionPredictionClient predictionApi = new CustomVisionPredictionClient(new ApiKeyServiceClientCredentials(predictionKey))
-            {
-                Endpoint = endpoint
-            };
-            return predictionApi;
-        }
-
         private static byte[] GetImageAsByteArray(Stream blob)
         {
             var binaryReader = new BinaryReader(blob);
@@ -228,27 +203,6 @@ namespace clasificadorva.ViewModels
 
 
     }
-
-    //private static async Task<PredictionResponse> GetPredictionResponse(Stream blob)
-    //{
-    //    var client = new HttpClient();
-    //    client.DefaultRequestHeaders.Add("Prediction-Key",
-    //        Environment.GetEnvironmentVariable("PredictionKey"));
-
-    //    var url = Environment.GetEnvironmentVariable("PredictionUrl");
-
-    //    var byteData = GetImageAsByteArray(blob);
-
-    //    using (var content = new ByteArrayContent(byteData))
-    //    {
-    //        content.Headers.ContentType =
-    //            new MediaTypeHeaderValue("application/octet-stream");
-    //        var response = await client.PostAsync(url, content);
-    //        var responseString = await response.Content.ReadAsStringAsync();
-    //        return JsonConvert.DeserializeObject<PredictionResponse>(responseString);
-    //    }
-    //}
-
 
     public class ClasificationResponse
     {

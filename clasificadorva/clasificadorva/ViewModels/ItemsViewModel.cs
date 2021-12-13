@@ -22,7 +22,7 @@ namespace clasificadorva.ViewModels
 {
     public class ItemsViewModel : BaseViewModel
     {
-        public const string ServiceApiUrl = "https://frutas0001-prediction.cognitiveservices.azure.com/customvision/v3.0/Prediction/805d7473-fe24-468f-aaba-df4ceea587cc/classify/iterations/fruit_classify_0021/image";
+        public const string ServiceApiUrl = "https://frutas0001-prediction.cognitiveservices.azure.com/customvision/v3.0/Prediction/805d7473-fe24-468f-aaba-df4ceea587cc/classify/iterations/Clasificar_Insecto_002/image";
         public const string ApiKey = "08112512dd8f46a18907bf1865373daf";//"PON_TU_API_KEY_AQUI";
 
         private MediaFile _foto = null;
